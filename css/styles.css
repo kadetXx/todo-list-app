@@ -25,8 +25,25 @@ hr {
 
 /*------------ INPUT STYLING ------------*/
 
+form {
+  display: flex;
+  border: 1px solid grey;
+  border-radius: 3px;
+}
+
+label[for = add-task-input] {
+  display: flex;
+  flex-grow: 1;
+}
+
+.add-task-input {
+  margin: 0 !important;
+  border: none !important;
+  padding: 0.8rem 0 0.8rem 3.5% !important; 
+}
+
 input[type='text'] {
-  margin: 3% 0;
+  margin: 3% 0 1.5%;
   width: 100%;
   padding: 0.8rem 0 0.8rem 2%;
   border: 1px solid grey;
@@ -35,6 +52,14 @@ input[type='text'] {
 
 input::placeholder {
   opacity: 0.6;
+}
+
+input:focus {
+  outline-color: rgb(32, 170, 156);
+}
+
+.filter-tasks {
+  width: 98% !important;
 }
 
 
@@ -79,9 +104,12 @@ input::placeholder {
 .task-submit-button {
   padding: 0.6rem 7%;
   border: none;
-  border-radius: 3px;
   background-color: rgb(32, 170, 156);
   color: white;
+}
+
+.task-submit-button:focus, .clear-all-button:focus {
+  outline: none;
 }
 
 .clear-all-button {
