@@ -52,7 +52,7 @@ function addNewTask(e) {
     //add class to link
     rmIcon.className = 'clear-icon'
     //add content of span
-    rmIcon.innerHTML = '<a><i class = "fa fa-remove"></i></a>'
+    rmIcon.innerHTML = '<a><i class="fas fa-trash-alt"></i></a>'
     //append checkbox to li
     li.appendChild(checkBox);
     //append text to li
@@ -203,7 +203,7 @@ function collectAndDisplay() {
       //add class to link
       rmIcon.className = 'clear-icon'
       //add content of span
-      rmIcon.innerHTML = '<a><i class = "fa fa-remove"></i></a>'
+      rmIcon.innerHTML = '<a><i class="fas fa-trash-alt"></i></a>'
       //append checkbox to li
       li.appendChild(checkBox);
       //append text to li
