@@ -25,7 +25,7 @@ hr {
 }
 
 .card {
-  box-shadow: 0 0 3px 1px grey;
+  /* box-shadow: 0 0 3px 1px grey; */
   padding: 5% 5% 10%;
 }
 
@@ -137,12 +137,18 @@ label[for = filter] {
   outline: none;
 }
 
+div .clear-btn {
+  display: flex;
+  justify-content: center;
+}
+
 .clear-all-button {
   padding: 0.7rem 5.7%;
   border: none;
   border-radius: 3px;
   background-color: rgb(212, 50, 50);
   color: white;
+  width: 90%;
 }
 
 /*------------ RESPONSIVE STYLING ------------*/
