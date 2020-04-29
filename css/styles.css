@@ -5,8 +5,14 @@ body {
   padding: 5% 0;
 }
 
+h1 {
+  color: rgb(56, 56, 56);
+  padding-bottom: 5%;
+}
+
 h3 {
-  margin: 1rem 0 0;
+  margin: 0;
+  color: rgb(56, 56, 56);
 }
 
 hr {
@@ -43,7 +49,7 @@ label[for = add-task-input] {
 }
 
 input[type='text'] {
-  margin: 3% 0 1.5%;
+  margin: 0 3%;
   width: 100%;
   padding: 0.8rem 0 0.8rem 2%;
   border: 1px solid grey;
@@ -59,7 +65,12 @@ input:focus {
 }
 
 .filter-tasks {
-  width: 98% !important;
+  padding: 2% 3.5% !important;
+  border: none !important;
+}
+
+.filter-tasks:focus {
+  outline: none !important;
 }
 
 
@@ -68,6 +79,19 @@ input:focus {
 .tasks-container ul {
   list-style: none;
   padding: 0;
+}
+
+.tasks-heading-container {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid rgb(194, 193, 193);
+  padding: 0.3rem;
+  margin-top: 1.5rem;
+}
+
+label [for = filter] {
+  flex-grow: 1;
+  width: 100% !important;
 }
 
 .task-item {
@@ -84,7 +108,7 @@ input:focus {
   position: absolute;
   right: 5%;
   font-size: 20px;
-  color: rgb(233, 110, 110);
+  color: rgb(209, 83, 83);
 }
 
 .ticker {
@@ -113,7 +137,7 @@ input:focus {
 }
 
 .clear-all-button {
-  padding: 0.6rem 5.7%;
+  padding: 0.7rem 5.7%;
   border: none;
   border-radius: 3px;
   background-color: rgb(212, 50, 50);
