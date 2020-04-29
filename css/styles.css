@@ -67,6 +67,7 @@ input:focus {
 .filter-tasks {
   padding: 2% 3.5% !important;
   border: none !important;
+  width: 85% !important;
 }
 
 .filter-tasks:focus {
@@ -89,7 +90,7 @@ input:focus {
   margin-top: 1.5rem;
 }
 
-label [for = filter] {
+label[for = filter] {
   flex-grow: 1;
   width: 100% !important;
 }
