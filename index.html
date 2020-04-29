@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Todo App - Kadet</title>
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="card">
+      <h1 class="main-heading">Todo App</h1>
+      <div class="form-container">
+        <form class="add-task-form">
+          <label for="add-task-input"><input type="text" name="add-task-input" class="add-task-input"
+              placeholder="enter new task"></label>
+          <br>
+          <input type="submit" class="task-submit-button" value="Add Task">
+        </form>
+      </div>
+      <hr>
+      <div class="tasks-container">
+        <h3 class="tasklist-heading">My Tasks</h3>
+        <label for="filter"><input type="text" name="filter" class="filter-tasks" placeholder="type to filter"></label>
+        <ul class="task-list">
+          <!-- <li class="task-item">
+            <input type="checkbox" class="ticker">Hello<span class="clear-icon"><a><i class = "fa fa-remove"></i></a></span>
+          </li>
+          <li class="task-item">
+            <input type="checkbox" class="ticker">Workout<span class="clear-icon"><a><i class = "fa fa-remove"></i></a></span>
+          </li> -->
+        </ul>
+      </div>
+      <hr>
+      <button class="clear-all-button">Clear Tasks</button>
+    </div>
+  </div>
+
+  <script src="js/app.js"></script>
+</body>
+
+</html>
