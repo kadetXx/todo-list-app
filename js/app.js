@@ -33,9 +33,13 @@ callAllEvents();
 //get input data and create an li element with it then add to ul
 
 function addNewTask(e) {
+  const isEmpty = str => !str.trim.length(); //check for empty spaces
 
   if (newTask.value === '') {
     alert('Please input a task');
+  } else if(isEmpty(newTask.value){
+    //alert the user if an empty space is entered as the "newTask value"
+    alert('Please input a task' );       
   } else {
     //declare new list item variable
     let li = document.createElement('li');
