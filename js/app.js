@@ -33,11 +33,13 @@ callAllEvents();
 //get input data and create an li element with it then add to ul
 
 function addNewTask(e) {
-  const isEmpty = str => !str.trim.length(); //check for empty spaces
+  e.preventDefault();
+
+  const isEmpty = str => !str.trim().length; //check for empty spaces
 
   if (newTask.value === '') {
     alert('Please input a task');
-  } else if(isEmpty(newTask.value){
+  } else if(isEmpty(newTask.value)){
     //alert the user if an empty space is entered as the "newTask value"
     alert('Please input a task' );       
   } else {
@@ -77,7 +79,6 @@ function addNewTask(e) {
 
   };
 
-  e.preventDefault();
 };
 
 //get all li elements and store them into local storage
@@ -170,7 +171,7 @@ function showFilterResults(e) {
 function clearAllTasks() {
 
   if (taskList.firstElementChild) {
-    if (confirm('This will eraze all tasks, are you sure you want to proceed?')) {
+    if (confirm('This will erase all tasks, are you sure you want to proceed?')) {
 
       while (taskList.firstElementChild) {
         taskList.firstElementChild.remove();
